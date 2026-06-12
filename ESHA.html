@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Esha 💗</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+}
+
+body{
+background:linear-gradient(135deg,#ffb6d9,#ffd6e7,#fff0f6);
+height:100vh;
+overflow:hidden;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+}
+
+.container{
+max-width:800px;
+padding:30px;
+z-index:10;
+}
+
+h1{
+font-size:3rem;
+margin-bottom:20px;
+color:#ff2d75;
+animation:pop 1s ease;
+}
+
+p{
+font-size:1.2rem;
+line-height:1.8;
+color:#444;
+}
+
+button{
+margin-top:25px;
+padding:15px 30px;
+border:none;
+border-radius:30px;
+background:#ff4f87;
+color:white;
+font-size:1rem;
+cursor:pointer;
+transition:.3s;
+}
+
+button:hover{
+transform:scale(1.1);
+}
+
+#letter{
+display:none;
+background:white;
+padding:25px;
+border-radius:20px;
+box-shadow:0 0 20px rgba(0,0,0,.1);
+max-height:70vh;
+overflow:auto;
+animation:fade 1s ease;
+}
+
+.heart{
+position:absolute;
+font-size:20px;
+animation:float 8s linear infinite;
+opacity:.7;
+}
+
+@keyframes float{
+from{
+transform:translateY(100vh);
+}
+to{
+transform:translateY(-100px);
+}
+}
+
+@keyframes pop{
+from{
+transform:scale(.5);
+opacity:0;
+}
+to{
+transform:scale(1);
+opacity:1;
+}
+}
+
+@keyframes fade{
+from{
+opacity:0;
+transform:translateY(20px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<div id="start">
+
+<h1>🎂 Happy Birthday Beech 🥳💗</h1>
+
+<p>
+A tiny surprise 🌸
+</p>
+
+<button onclick="openLetter()">
+Open Your Birthday Surprise 💌
+</button>
+
+</div>
+
+<div id="letter">
+
+<h1>Happy Birthday Esha 💗</h1>
+
+<p>
+
+To my twin, my best friend, my person and my favourite beech... 🥹💗
+
+Thank you for everything.
+
+Thank you for existing.
+
+You make my life simpler and happier by just existing in it.
+
+You are genuinely one of the kindest and most beautiful souls I have ever known.
+
+You somehow manage to make ordinary days feel lighter, happier and easier.
+
+Thank you for all the laughs.
+
+Thank you for all the conversations.
+
+Thank you for all the memories.
+
+Thank you for staying.
+
+You are the best thing ever happened in ma life. 💗
+
+You are the best human being I've ever seen.
+
+No matter how many people I meet, you'll always have your own place in my heart.
+
+You are my twin.
+
+You are my best friend.
+
+You are my person.
+
+And yes...
+
+Still annoying. 😭😂
+
+But my favourite annoying person.
+
+I hope this year brings you happiness, peace, success, good health and everything you've been wishing for.
+
+Because if anyone deserves it, it's you.
+
+HAPPY BIRTHDAY TO MY MOST FAVOURITE PERSON IN THIS UNIVERSE 💗🫶🏻
+
+Thank you beech for being in my life 😭
+
+with Love,
+
+YOURS NEGAAA🌸💗
+
+</p>
+
+</div>
+
+</div>
+
+
+<script>
+
+function openLetter(){
+document.getElementById("start").style.display="none";
+document.getElementById("letter").style.display="block";
+}
+
+function createHeart(){
+
+const heart=document.createElement("div");
+
+heart.classList.add("heart");
+
+heart.innerHTML="💗";
+
+heart.style.left=Math.random()*100+"vw";
+
+heart.style.fontSize=(20+Math.random()*30)+"px";
+
+heart.style.animationDuration=(5+Math.random()*5)+"s";
+
+document.body.appendChild(heart);
+
+setTimeout(()=>{
+heart.remove();
+},8000);
+
+}
+
+setInterval(createHeart,500);
+
+</script>
+
+</body>
+</html>
