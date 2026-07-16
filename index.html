@@ -158,8 +158,14 @@ Keep smiling. Keep being you. And never forget that someone, somewhere, is incre
 Happy Birthday once again, Beech. 🤍
 — Your Nega 🫶
   <p style="margin-top:30px;">wait...one more thing...</p>
-  <img src="Esha.jpg" class="birthday-photo" 
-  alt="Esha">
+  <button onclick="showPhoto()">🎁 Open
+  Surprise</button>
+
+  <img id="secretPhoto" 
+       src="Esha.jpg"
+       class="birthday-photo" 
+       style="display:none;"
+       alt="Esha">
 
 </div>
 
@@ -196,8 +202,11 @@ heart.remove();
 }
 
 setInterval(createHeart,500);
-
-</script>
+function showphoto() {
+document.getElementById("secretPhoto").sty
+le.display = "block";
+}  
+</script>  
 
 </body>
 </html>
